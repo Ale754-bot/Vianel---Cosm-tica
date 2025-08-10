@@ -21,7 +21,7 @@ const Footer = () => {
           <img
             src={Duena}
             alt="Dueña de VIANEL"
-            className="w-full h-full object-cover opacity-20 grayscale"
+            className="w-full h-full object-cover opacity-35 grayscale"
             style={{
               objectPosition: 'center 10%',
               mixBlendMode: 'multiply',

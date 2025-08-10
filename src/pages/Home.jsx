@@ -1,23 +1,26 @@
 // src/pages/Home.jsx
 import Hero from '../components/Hero';
-import ProductCard from '../components/ProductCard';
+import ProductoHome from '../components/ProductHome';
 
 const Home = () => {
   const destacados = [
     {
-      title: 'Crema Antioxidante',
-      image: '/crema.jpg',
-      price: '10.000',
+      nombre: 'Crema Antioxidante',
+      imagen: '/crema.jpg',
+      subtitulo: 'Nutrición con girasol y rosa mosqueta',
+      link: '/productos#crema-antioxidante',
     },
     {
-      title: 'Serum Retinol',
-      image: '/serum.jpg',
-      price: '10.000',
+      nombre: 'Serum Retinol',
+      imagen: '/serum.jpg',
+      subtitulo: 'Regeneración nocturna con retinol vegetal',
+      link: '/productos#serum-retinol',
     },
     {
-      title: 'Agus de Rosas',
-      image: '/agua.jpg',
-      price: '10.000',
+      nombre: 'Agua de Rosas',
+      imagen: '/agua.jpg',
+      subtitulo: 'Frescura y calma para todo tipo de piel',
+      link: '/productos#agua-de-rosas',
     },
   ];
 
@@ -28,7 +31,7 @@ const Home = () => {
         <h3 className="text-2xl font-serif mb-6 text-[#1a1a1a]">Destacados</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {destacados.map((p, i) => (
-            <ProductCard key={i} {...p} />
+            <ProductoHome key={i} {...p} />
           ))}
         </div>
       </section>

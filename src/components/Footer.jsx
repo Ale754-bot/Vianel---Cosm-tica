@@ -1,11 +1,11 @@
 // src/components/Footer.jsx
 import { FaWhatsapp, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import Girasol from '/17179.png';
-import Duena from '/17180.png'; // Asegurate de que el path sea correcto
+import Duena from '/Gise.jpg';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-white text-black py-18 px-6 mt-20 overflow-hidden">
+    <footer className="relative bg-white text-black py-20 px-6 mt-20 overflow-hidden">
       {/* Fondo decorativo */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Girasol centrado */}
@@ -23,40 +23,56 @@ const Footer = () => {
             alt="Dueña de VIANEL"
             className="w-full h-full object-cover opacity-35 grayscale"
             style={{
-              objectPosition: 'center 10%',
+              objectPosition: 'center 30%',
               mixBlendMode: 'multiply',
               WebkitMaskImage: 'linear-gradient(to left, black 40%, transparent)',
               maskImage: 'linear-gradient(to left, black 40%, transparent)',
             }}
           />
+
+          {/* Firma editorial de la fundadora */}
+          <div className="absolute bottom-6 right-6 text-right z-10">
+            <p className="text-xs font-serif text-white opacity-70 mix-blend-soft-light leading-snug">
+              Gisel Fernández<br />
+              Fundadora · MN/08003<br />
+              Dermatocosmiatra
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Contenido principal */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
-        <div>
-          <h3 className="text-xl font-serif mb-2">VIANEL</h3>
-          <p className="text-sm text-gray-400">
-            Tu piel, nuestra inspiración.
-          </p>
-        </div>
+      {/* Contenido principal reorganizado */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-start relative z-10">
+        {/* Columna izquierda: branding */}
+        <div className="flex flex-col space-y-6">
+          <div>
+            <h3 className="text-xl font-serif mb-2">VIANEL</h3>
+            <p className="text-sm text-gray-400">
+              Tu piel, nuestra inspiración.
+            </p>
+          </div>
 
-        <div className="flex flex-col md:items-end space-y-2">
-          <p className="text-sm text-gray-400">
-            ¿Querés hablar con nosotros? Estamos a un mensaje de distancia.
-          </p>
-          <div className="flex space-x-4 text-[#c6a25c] text-lg">
-            <a href="https://wa.me/5491161861142" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp />
-            </a>
-            <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-            <a href="mailto:contacto@vianel.com">
-              <FaEnvelope />
-            </a>
+          {/* Contacto reubicado */}
+          <div className="space-y-2">
+            <p className="text-sm text-gray-400">
+              ¿Querés hablar con nosotros? Estamos a un mensaje de distancia.
+            </p>
+            <div className="flex space-x-4 text-[#c6a25c] text-lg">
+              <a href="https://wa.me/5491161861142" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp />
+              </a>
+              <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="mailto:contacto@vianel.com">
+                <FaEnvelope />
+              </a>
+            </div>
           </div>
         </div>
+
+        {/* Columna derecha: vacía para dejar espacio a la imagen */}
+        <div></div>
       </div>
 
       {/* Copyright */}

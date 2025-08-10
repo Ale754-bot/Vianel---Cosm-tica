@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative h-[80vh] md:h-[90vh] w-full overflow-hidden">
       <img
-        src="/17177.jpg"
+        src="/Modelo.jpg"
         alt="VIANEL Hero"
         className="absolute inset-0 w-full h-full object-cover"
       />

@@ -5,18 +5,18 @@ import ProductCard from '../components/ProductCard';
 const Home = () => {
   const destacados = [
     {
-      title: 'Vianel 1',
-      image: '/bag.jpg',
+      title: 'Crema Antioxidante',
+      image: '/crema.jpg',
       price: '10.000',
     },
     {
-      title: 'Vianel 2',
-      image: '/coat.jpg',
+      title: 'Serum Retinol',
+      image: '/serum.jpg',
       price: '10.000',
     },
     {
-      title: 'Vianel 3 ',
-      image: '/shoes.jpg',
+      title: 'Agus de Rosas',
+      image: '/agua.jpg',
       price: '10.000',
     },
   ];

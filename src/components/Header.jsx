@@ -8,7 +8,14 @@ const Header = () => {
   return (
     <header className="bg-[#f8f5f2] text-[#1a1a1a] shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-serif tracking-wide">VIANEL</h1>
+        {/* Logotipo en lugar del texto */}
+        <Link to="/">
+          <img
+            src="/vianel.png" // Asegurate de que esté en la carpeta public/
+            alt="Vianel"
+            className="h-10 w-auto" // Ajustá el tamaño según tu diseño
+          />
+        </Link>
 
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
           <Link to="/" className="hover:text-[#c2a67d] transition">Inicio</Link>

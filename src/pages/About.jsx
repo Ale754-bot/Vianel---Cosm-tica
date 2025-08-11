@@ -19,7 +19,7 @@ const About = () => {
         {/* Bloque 1: Inicio */}
         <div className="flex flex-col md:flex-row items-center gap-10">
           <motion.img
-            src="/17180.png"
+            src="/Gise.jpg"
             alt="Inicio de VIANEL"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
             initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ const About = () => {
         {/* Bloque 2: Proceso */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-10">
           <motion.img
-            src="/proceso.jpg"
+            src="/17377.png"
             alt="Proceso creativo"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
             initial={{ opacity: 0 }}

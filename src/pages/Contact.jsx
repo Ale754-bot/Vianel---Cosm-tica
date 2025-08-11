@@ -24,7 +24,7 @@ const Contact = () => {
         </motion.p>
 
         <motion.a
-          href="https://wa.me/549XXXXXXXXXX"
+          href="https://wa.me/5491161861142"
           target="_blank"
           whileHover={{ scale: 1.05 }}
           className="inline-block bg-[#c6a25c] text-white px-6 py-3 rounded-full font-medium shadow-md hover:bg-[#b08e4f] transition"

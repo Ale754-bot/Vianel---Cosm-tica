@@ -29,15 +29,6 @@ const Footer = () => {
               maskImage: 'linear-gradient(to left, black 40%, transparent)',
             }}
           />
-
-          {/* Firma editorial de la fundadora */}
-          <div className="absolute bottom-6 right-6 text-right z-10">
-            <p className="text-xs font-serif text-white opacity-70 mix-blend-soft-light leading-snug">
-              Gisel Fernández<br />
-              Fundadora · MN/08003<br />
-              Dermatocosmiatra
-            </p>
-          </div>
         </div>
       </div>
 

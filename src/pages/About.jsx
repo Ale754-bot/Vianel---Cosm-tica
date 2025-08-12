@@ -19,7 +19,7 @@ const About = () => {
         {/* Bloque 1: Inicio */}
         <div className="flex flex-col md:flex-row items-center gap-10">
           <motion.img
-            src="/Gise.jpg"
+            src="/Gisel2.jpg"
             alt="Inicio de VIANEL"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
             initial={{ opacity: 0 }}
@@ -67,13 +67,14 @@ const About = () => {
         {/* Bloque 3: Presente */}
         <div className="flex flex-col items-center text-center gap-6">
           <motion.img
-            src="/presente.jpg"
-            alt="Presente de VIANEL"
-            className="w-full md:w-2/3 rounded-xl shadow-lg object-cover"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          />
+  src="/17472.jpg"
+  alt="Presente de VIANEL"
+  className="w-[90%] md:w-[70%] lg:w-[40%] rounded-xl shadow-lg object-cover"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3 }}
+/>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

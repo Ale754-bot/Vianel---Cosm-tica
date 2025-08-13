@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import { FaWhatsapp, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import Girasol from '/17179.png';
-import Duena from '/Gise.jpg';
+import Duena from '/Gisel2.jpg';
 
 const Footer = () => {
   return (

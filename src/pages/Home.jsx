@@ -7,13 +7,13 @@ const Home = () => {
     {
       nombre: 'Crema Antioxidante',
       imagen: '/crema.jpg',
-      subtitulo: 'Nutrición con girasol y rosa mosqueta',
+      subtitulo: 'Vitamina C, Niacinamida, Resveratrol y FPS 30. Una crema que trata, nutre y protege.',
       link: '/productos#crema-antioxidante',
     },
     {
       nombre: 'Serum Retinol',
       imagen: '/serum.jpg',
-      subtitulo: 'Regeneración nocturna con retinol vegetal',
+      subtitulo: 'Reduce líneas, estimula colágeno, transforma tu piel.',
       link: '/productos#serum-retinol',
     },
     {

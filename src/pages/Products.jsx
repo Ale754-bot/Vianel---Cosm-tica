@@ -7,7 +7,7 @@ const Products = () => {
       nombre: 'Crema Antioxidante',
       imagen: '/crema.jpg',
       descripcion:
-        'Nutrición profunda con girasol y rosa mosqueta. Ideal para pieles que buscan equilibrio, suavidad y un momento de conexión nocturna.',
+        'Es una poderosa crema antiage. Con una fórmula única y concentrada, combina los beneficios de la Vitamina C, Niacinamida, Resveratrol, DMAE y Ácido Hialurónico, junto con nanoesferas concentradas y un protector solar FPS 30 UVA/UVB.',
       beneficios: [
         'Unifica el tono de la piel',
     'Acción antiage visible',

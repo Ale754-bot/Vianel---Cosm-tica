@@ -7,13 +7,15 @@ const About = () => {
 
         {/* Imagen única */}
         <motion.img
-        src="/Gisel2.jpg"
-        alt="Gisel - Fundadora de Vianel"
-        className="w-full max-w-[600px] mx-auto rounded-xl shadow-lg object-cover"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
+  src="/Gisel2.jpg"
+  alt="Gisel - Fundadora de Vianel"
+  className="w-full max-w-[600px] mx-auto rounded-xl shadow-lg object-cover"
+  initial={{ scale: 1, opacity: 0 }}
+  whileInView={{ scale: 1.05, opacity: 1 }}
+  transition={{ duration: 2, ease: 'easeOut' }}
+  viewport={{ once: false, amount: 0.5 }}
 />
+
 
 
         {/* Bloque 1 – Quién soy */}

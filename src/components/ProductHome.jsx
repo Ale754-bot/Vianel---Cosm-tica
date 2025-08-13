@@ -6,16 +6,16 @@ export default function ProductoHome({ nombre, imagen, subtitulo }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      viewport={{ once: true }}
-      className="producto-home text-center bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-500 p-6 group"
+      viewport={{ once: false, amount: 0.3 }}
+      className="producto-home text-center bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-500 p-6 group"
     >
       <img
         src={imagen}
         alt={nombre}
-        className="w-full object-cover rounded-md transition-transform duration-700 group-hover:scale-105"
+        className="w-full object-cover rounded-md transition-transform duration-700 ease-out group-hover:scale-[1.03]"
       />
       <h3 className="text-lg font-serif mt-4 text-[#1a1a1a]">{nombre}</h3>
       <p className="text-sm italic text-[#c6a25c]">{subtitulo}</p>

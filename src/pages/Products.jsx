@@ -99,9 +99,6 @@ const Products = () => {
           <p className="mt-4 text-sm text-gray-500">
             Una colección pensada para nutrir los sentidos y vestir los espacios de serenidad.
           </p>
-          <h2 className="mt-6 text-base uppercase tracking-wide text-gray-400">
-            Productos
-          </h2>
         </div>
 
         {/* Grid de productos */}

@@ -5,13 +5,14 @@ const Hero = () => {
     <section className="relative h-[90vh] w-full overflow-hidden bg-[#f5f0e7]">
       {/* Imagen de fondo con zoom-out lento */}
       <motion.img
-        src="/Modelo.jpg"
-        alt="VIANEL Hero"
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
-        initial={{ scale: 1.1, opacity: 0 }}
-        animate={{ scale: 1, opacity: 0.4 }}
-        transition={{ duration: 4 }}
-      />
+  src="/Modelo.jpg"
+  alt="VIANEL Hero"
+  className="absolute inset-0 w-full h-full object-cover object-top opacity-40 md:scale-100"
+  initial={{ scale: 1.1, opacity: 0 }}
+  animate={{ scale: 1, opacity: 0.4 }}
+  transition={{ duration: 4 }}
+/>
+
 
       {/* Niebla suave desde abajo */}
       <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#f5f0e7] to-transparent z-10" />

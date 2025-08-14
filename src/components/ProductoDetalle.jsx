@@ -14,7 +14,7 @@ export default function ProductoDetalle({ id, nombre, imagen, descripcion, benef
       className="producto-card group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-500 bg-white p-6 max-w-md mx-auto"
     >
       <img
-        src={imagen}
+        src={imagen}a
         alt={nombre}
         className="w-full aspect-[3/4] object-cover rounded-md transition-transform duration-700 group-hover:scale-105"
       />

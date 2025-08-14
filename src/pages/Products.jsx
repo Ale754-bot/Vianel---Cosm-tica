@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import ProductoDetalle from '../components/ProductoDetalle';
 
 const Products = () => {
@@ -10,9 +12,9 @@ const Products = () => {
         'Es una poderosa crema antiage. Con una fórmula única y concentrada, combina los beneficios de la Vitamina C, Niacinamida, Resveratrol, DMAE y Ácido Hialurónico, junto con nanoesferas concentradas y un protector solar FPS 30 UVA/UVB.',
       beneficios: [
         'Unifica el tono de la piel',
-    'Acción antiage visible',
-    'Protección solar FPS 30',
-    'Hidratación intensa y prolongada',
+        'Acción antiage visible',
+        'Protección solar FPS 30',
+        'Hidratación intensa y prolongada',
       ],
       activos: [
         'Vitamina C y Resveratrol: antioxidantes que protegen la piel',
@@ -35,8 +37,8 @@ const Products = () => {
       ],
       activos: [
         'Retinol al 5%: potencia regeneradora con efecto antiage',
-  'Estimulación de colágeno y elastina: firmeza desde adentro',
-  'Mejora de textura y tono: piel más uniforme y luminosa',
+        'Estimulación de colágeno y elastina: firmeza desde adentro',
+        'Mejora de textura y tono: piel más uniforme y luminosa',
       ],
       whatsappLink:
         'https://wa.me/5491161861142?text=Hola,%20quiero%20consultar%20por%20el%20Serum%20Retinol',
@@ -87,38 +89,55 @@ const Products = () => {
     },
   ];
 
+  // Efecto de foco al producto que recibe el scroll
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        target.classList.add('destacado');
+        setTimeout(() => {
+          target.classList.remove('destacado');
+        }, 2000);
+      }
+    }
+  }, []);
+
   return (
     <div className="pt-[80px] bg-[#f8f5f2] min-h-screen">
-  <section className="max-w-7xl mx-auto px-6 py-12">
+      <section className="max-w-7xl mx-auto px-6 py-12">
+        {/* Slogan editorial con animación */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-xl md:text-2xl lg:text-3xl italic font-serif text-[#c6a25c] leading-snug">
+            “Dicen que el alma también se hidrata…<br />con lo que huele a calma”
+          </h1>
+          <p className="mt-4 text-sm text-gray-500">
+            Una colección pensada para nutrir los sentidos y vestir los espacios de serenidad.
+          </p>
+        </motion.div>
 
-    {/* Slogan editorial */}
-    <div className="text-center mb-12">
-      <h1 className="text-xl md:text-2xl lg:text-3xl italic font-serif text-[#c6a25c] leading-snug">
-        “Dicen que el alma también se hidrata…<br />con lo que huele a calma”
-      </h1>
-      <p className="mt-4 text-sm text-gray-500">
-        Una colección pensada para nutrir los sentidos y vestir los espacios de serenidad.
-      </p>
+        {/* Grid de productos con animación escalonada */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {productos.map((p, i) => (
+            <motion.div
+      key={p.id}
+      initial={{ opacity: 0, scale: 0.98 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: 'easeOut', delay: i * 0.1 }}
+      viewport={{ once: true }}
+    >
+              <ProductoDetalle {...p} />
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </div>
-
-    {/* Grid de productos */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {productos.map((p, i) => (
-        <ProductoDetalle
-          key={i}
-          id={p.id} // ✅ se pasa como prop
-          nombre={p.nombre}
-          imagen={p.imagen}
-          descripcion={p.descripcion}
-          beneficios={p.beneficios}
-          activos={p.activos}
-          whatsappLink={p.whatsappLink}
-        />
-      ))}
-    </div>
-  </section>
-</div>
-
   );
 };
 

@@ -35,15 +35,17 @@ function App() {
           />
           <Route
             path="/products"
-            element={
-              <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: -100, opacity: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-              >
-                <Products />
-              </motion.div>
+  element={
+    <motion.div
+      initial={{ opacity: 0, filter: 'blur(6px)' }}
+      animate={{ opacity: 1, filter: 'blur(0px)' }}
+      exit={{ opacity: 0, filter: 'blur(6px)' }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
+      <Products />
+    </motion.div>
+            
+              
             }
           />
           <Route

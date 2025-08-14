@@ -30,7 +30,6 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-12">
           <h3 className="text-3xl font-serif text-[#1a1a1a]">Productos Destacados</h3>
-          <p className="mt-2 text-base italic text-[#c6a25c]">Selección curada para tu ritual diario</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
@@ -38,8 +37,7 @@ const Home = () => {
             <ProductoHome key={i} {...p} />
           ))}
         </div>
-      </section>
-      <div className="bg-[#fdfaf5] py-12 text-center">
+        <div className="bg-white py-12 mt-7 text-center">
   <p className="font-serif text-[#c6a25c] text-sm mb-4 tracking-wide">
     Cada ritual cuenta una historia. Descubrí la colección completa.
   </p>
@@ -50,6 +48,8 @@ const Home = () => {
     Ver línea completa
   </a>
 </div>
+      </section>
+      
 
 
     </div>

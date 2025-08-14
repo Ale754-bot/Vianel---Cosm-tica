@@ -10,7 +10,7 @@ const Hero = () => {
   className="absolute inset-0 w-full h-full object-cover object-top opacity-40 md:scale-100"
   initial={{ scale: 1.1, opacity: 0 }}
   animate={{ scale: 1, opacity: 0.4 }}
-  transition={{ duration: 4 }}
+  transition={{ duration: 3 }}
 />
 
 

@@ -89,35 +89,36 @@ const Products = () => {
 
   return (
     <div className="pt-[80px] bg-[#f8f5f2] min-h-screen">
-      <section className="max-w-7xl mx-auto px-6 py-12">
+  <section className="max-w-7xl mx-auto px-6 py-12">
 
-        {/* Slogan editorial */}
-        <div className="text-center mb-12">
-          <h1 className="text-xl md:text-2xl lg:text-3xl italic font-serif text-[#c6a25c] leading-snug">
-            “Dicen que el alma también se hidrata…<br />con lo que huele a calma”
-          </h1>
-          <p className="mt-4 text-sm text-gray-500">
-            Una colección pensada para nutrir los sentidos y vestir los espacios de serenidad.
-          </p>
-        </div>
-
-        {/* Grid de productos */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productos.map((p, i) => (
-            <div key={i} id={p.id}>
-              <ProductoDetalle
-                nombre={p.nombre}
-                imagen={p.imagen}
-                descripcion={p.descripcion}
-                beneficios={p.beneficios}
-                activos={p.activos}
-                whatsappLink={p.whatsappLink}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+    {/* Slogan editorial */}
+    <div className="text-center mb-12">
+      <h1 className="text-xl md:text-2xl lg:text-3xl italic font-serif text-[#c6a25c] leading-snug">
+        “Dicen que el alma también se hidrata…<br />con lo que huele a calma”
+      </h1>
+      <p className="mt-4 text-sm text-gray-500">
+        Una colección pensada para nutrir los sentidos y vestir los espacios de serenidad.
+      </p>
     </div>
+
+    {/* Grid de productos */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {productos.map((p, i) => (
+        <ProductoDetalle
+          key={i}
+          id={p.id} // ✅ se pasa como prop
+          nombre={p.nombre}
+          imagen={p.imagen}
+          descripcion={p.descripcion}
+          beneficios={p.beneficios}
+          activos={p.activos}
+          whatsappLink={p.whatsappLink}
+        />
+      ))}
+    </div>
+  </section>
+</div>
+
   );
 };
 

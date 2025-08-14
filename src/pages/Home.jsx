@@ -7,19 +7,19 @@ const Home = () => {
       nombre: 'Crema Antioxidante',
       imagen: '/crema.jpg',
       subtitulo: 'Vitamina C, Niacinamida, Resveratrol y FPS 30. Una crema que trata, nutre y protege.',
-      link: '/productos#crema-antioxidante',
+      link: '/products#crema-antioxidante',
     },
     {
       nombre: 'Serum Retinol',
       imagen: '/serum.jpg',
       subtitulo: 'Reduce líneas, estimula colágeno, transforma tu piel.',
-      link: '/productos#serum-retinol',
+      link: '/products#serum-retinol',
     },
     {
       nombre: 'Agua de Rosas',
       imagen: '/agua.jpg',
       subtitulo: 'Frescura y calma para todo tipo de piel',
-      link: '/productos#agua-de-rosas',
+      link: '/products#agua-de-rosas',
     },
   ];
 
@@ -39,6 +39,19 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <div className="bg-[#fdfaf5] py-12 text-center">
+  <p className="font-serif text-[#c6a25c] text-sm mb-4 tracking-wide">
+    Cada ritual cuenta una historia. Descubrí la colección completa.
+  </p>
+  <a
+    href="/products"
+    className="px-6 py-2 border border-[#c6a25c] text-[#c6a25c] font-serif text-sm rounded-full hover:bg-[#c6a25c] hover:text-white transition"
+  >
+    Ver línea completa
+  </a>
+</div>
+
+
     </div>
   );
 };

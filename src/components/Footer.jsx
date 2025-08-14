@@ -5,7 +5,7 @@ import Duena from '/Gisel2.jpg';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-white text-black py-20 px-6 mt-20 overflow-hidden">
+    <footer className="relative bg-white text-black py-20 px-6 mt-0 overflow-hidden">
       {/* Fondo decorativo */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Girasol centrado */}

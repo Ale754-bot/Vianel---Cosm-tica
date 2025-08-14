@@ -7,12 +7,11 @@ const Hero = () => {
       <motion.img
   src="/Modelo.jpg"
   alt="VIANEL Hero"
-  className="absolute inset-0 w-full h-full md:object-cover object-contain object-top opacity-40"
+  className="absolute inset-0 w-full h-full object-cover object-top opacity-40 md:scale-100"
   initial={{ scale: 1.1, opacity: 0 }}
   animate={{ scale: 1, opacity: 0.4 }}
   transition={{ duration: 4 }}
 />
-
 
 
       {/* Niebla suave desde abajo */}

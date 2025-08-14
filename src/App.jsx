@@ -9,6 +9,8 @@ import About from './pages/About';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
+import PageTransition from './components/PageTransition';
+
 
 function App() {
   const location = useLocation();
@@ -34,20 +36,28 @@ function App() {
             }
           />
           <Route
-            path="/products"
+  path="/products"
   element={
-    <motion.div
-      initial={{ opacity: 0, filter: 'blur(6px)' }}
-      animate={{ opacity: 1, filter: 'blur(0px)' }}
-      exit={{ opacity: 0, filter: 'blur(6px)' }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
-    >
-      <Products />
-    </motion.div>
+    <>
+      <PageTransition />
+      <motion.div
+        className="relative"
+        initial={{ opacity: 0, filter: 'blur(6px)' }}
+        animate={{ opacity: 1, filter: 'blur(0px)' }}
+        exit={{ opacity: 0, filter: 'blur(6px)' }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+      >
+        <Products />
+      </motion.div>
+    </>
+  }
+/>
+
+
             
               
-            }
-          />
+            
+          
           <Route
             path="/about"
             element={

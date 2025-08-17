@@ -18,7 +18,7 @@ const Home = () => {
     {
       nombre: 'Agua de Rosas',
       imagen: '/agua.jpg',
-      subtitulo: 'Frescura y calma para todo tipo de piel',
+      subtitulo: 'Limpieza emocional, piel en equilibrio.',
       link: '/products#agua-de-rosas',
     },
   ];

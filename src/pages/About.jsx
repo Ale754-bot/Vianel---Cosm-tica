@@ -3,29 +3,28 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <div className="pt-[80px] bg-[#f8f5f2] min-h-screen">
-      <section className="max-w-4xl mx-auto px-6 py-20 space-y-16 text-[#1a1a1a]">
+      <section className="max-w-4xl mx-auto px-6 py-20 space-y-20 text-[#1a1a1a]">
 
-        {/* Imagen única */}
+        {/* Imagen principal destacada */}
         <motion.img
-  src="/Gisel2.jpg"
-  alt="Gisel - Fundadora de Vianel"
-  className="w-full max-w-[600px] mx-auto rounded-xl shadow-lg object-cover"
-  initial={{ scale: 1, opacity: 0 }}
-  whileInView={{ scale: 1.05, opacity: 1 }}
-  transition={{ duration: 2, ease: 'easeOut' }}
-  viewport={{ once: false, amount: 0.5 }}
-/>
-
-
+          src="/b2.jpg"
+          alt="Gisel - Fundadora de Vianel"
+          className="w-full max-w-[600px] mx-auto object-cover"
+          initial={{ scale: 0.95, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.8, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.6 }}
+        />
 
         {/* Bloque 1 – Quién soy */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+          viewport={{ once: true }}
           className="space-y-4"
         >
-          <h3 className="text-2xl font-serif text-[#c6a25c]"></h3>
+          
           <p className="text-base leading-relaxed text-gray-700">
             Hola, mi nombre es Gisel, soy Dermatocosmiatra Clínica, Aux. en Cirugía Plástica, Docente en Estética y Especialista en patologías cutáneas. Con amplia experiencia en el cuidado de la piel, me comprometo a brindar soluciones efectivas y seguras para el cuidado personal.
           </p>
@@ -33,9 +32,10 @@ const About = () => {
 
         {/* Bloque 2 – Así nace Vianel */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.1 }}
+          viewport={{ once: true }}
           className="space-y-4"
         >
           <h3 className="text-2xl font-serif text-[#c6a25c]">Así nace Vianel</h3>
@@ -46,9 +46,10 @@ const About = () => {
 
         {/* Bloque 3 – Tu piel, mi compromiso */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
+          viewport={{ once: true }}
           className="space-y-4"
         >
           <h3 className="text-2xl font-serif text-[#c6a25c]">Tu piel, mi compromiso</h3>
